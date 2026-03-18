@@ -3,8 +3,8 @@ services:
     name: lumina-studio-mainl
     runtime: static
     rootDir: lumina-studio-main
-    buildCommand: npm run build
-    staticPublishPath: ./lumina-studio-main/dist
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
     routes:
       - type: rewrite
         source: /*
